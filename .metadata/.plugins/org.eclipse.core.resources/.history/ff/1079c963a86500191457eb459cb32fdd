@@ -1,0 +1,10 @@
+package springboot.my_first_application.controller;
+
+public class TestController {
+	
+	@RequestMapping("/")
+	  public String home() {
+	    return "Spring boot is working!";
+	  }
+
+}
