@@ -44,7 +44,34 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<dependency>
+                   <groupId>com.fasterxml.jackson.core</groupId>
+                   <artifactId>jackson-core</artifactId>
+		</dependency>
+		
+	
+		
 	</dependencies>
+	
+	
+	<pluginRepositories> 
+    <pluginRepository>
+      <id>synergian-repo</id>
+      <url>https://raw.github.com/synergian/wagon-git/releases</url>
+    </pluginRepository>
+</pluginRepositories> 
+
+	
+	 <distributionManagement>
+     <repository>
+        <id>pvtxx.repo</id>
+        <name>PVTXX repo</name>               
+        <url>https://github.com/RazanJaber/PVT.git</url>
+   	 	 </repository>
+		 </distributionManagement>
+	
+	
 
 	<build>
 		<plugins>
@@ -53,6 +80,15 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		 <extensions>
+       <extension>
+    	   <groupId>ar.com.synergian</groupId>
+     	   <artifactId>wagon-git</artifactId>
+      	   <version>0.2.5</version>
+       </extension>
+    </extensions>
 	</build>
+	
+	
 
 </project>
