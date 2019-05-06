@@ -49,9 +49,6 @@
                    <groupId>com.fasterxml.jackson.core</groupId>
                    <artifactId>jackson-core</artifactId>
 		</dependency>
-		
-	
-		
 	</dependencies>
 	
 	
@@ -65,8 +62,8 @@
 	
 	 <distributionManagement>
      <repository>
-        <id>pvtxx.repo</id>
-        <name>PVTXX repo</name>               
+        <id>Razna.repo</id>
+        <name>Razan repo</name>               
         <url>https://github.com/RazanJaber/PVT.git</url>
    	 	 </repository>
 		 </distributionManagement>
